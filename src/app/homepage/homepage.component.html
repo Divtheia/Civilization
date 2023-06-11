@@ -1,0 +1,22 @@
+<nz-layout>
+  <nz-header>
+    <ul nz-menu nzMode="horizontal">
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="home" nzTheme="outline"></span>
+        <a [routerLink]="['/']"> 首頁</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="crown" nzTheme="outline"></span>
+        <a [routerLink]="['/', 'score']"> 分數</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="code" nzTheme="outline"></span>
+        <a [routerLink]="['/', 'input']"> 輸入</a>
+      </li>
+    </ul>
+  </nz-header>
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+  <nz-footer>我是Footer</nz-footer>
+</nz-layout>

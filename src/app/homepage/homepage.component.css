@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nz-layout {
+  min-height: 100vh;
+  background: pink;
+}
+
+nz-header {
+    background: #fff;
+  }
+
+nz-content {
+  height: 100%;
+}
+
+nz-footer {
+  text-align: center;
+}
+

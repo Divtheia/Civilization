@@ -1,0 +1,134 @@
+<nz-divider nzOrientation="left" nzText="文明之城"></nz-divider>
+<div nz-row [nzGutter]="0">
+  <!-- No0 -->
+  <div nz-col class="gutter-row" [nzSpan]="24">
+    <div class="inner-box">{{ country[0].name }}</div>
+    <div
+      class="inner-box"
+      [countUp]="country[0].score"
+      [options]="{ duration: score0 / 5 }"
+    >
+      0
+    </div>
+    <nz-progress
+      *ngIf="maxIndex != 0"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[0].percent"
+      [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex == 0"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[0].percent"
+      [nzStrokeColor]="higherStyle"
+    ></nz-progress>
+  </div>
+
+  <!-- No1 -->
+  <div nz-col class="gutter-row" [nzSpan]="24">
+    <div class="inner-box">{{ country[1].name }}</div>
+    <div
+      class="inner-box"
+      [countUp]="country[1].score"
+      [options]="{ duration: score1 / 5 }"
+    >
+      0
+    </div>
+    <nz-progress
+      *ngIf="maxIndex == 1"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[1].percent"
+      [nzStrokeColor]="higherStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex != 1"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[1].percent"
+      [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+  </div>
+
+  <!-- No2 -->
+  <div nz-col class="gutter-row" [nzSpan]="24">
+    <div class="inner-box">{{ country[2].name }}</div>
+    <div
+      class="inner-box"
+      [countUp]="country[2].score"
+      [options]="{ duration: score2 / 5 }"
+    >
+      0
+    </div>
+    <nz-progress
+      *ngIf="maxIndex == 2"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[2].percent"
+      [nzStrokeColor]="higherStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex != 2"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[2].percent"
+      [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+  </div>
+
+  <!-- No3 -->
+  <div nz-col class="gutter-row" [nzSpan]="24">
+    <div class="inner-box">{{ country[3].name }}</div>
+    <div
+      class="inner-box"
+      [countUp]="country[3].score"
+      [options]="{ duration: score3 / 5 }"
+    >
+      0
+    </div>
+    <nz-progress
+      *ngIf="maxIndex == 3"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[3].percent"
+      [nzStrokeColor]="higherStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex != 3"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[3].percent"
+      [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+  </div>
+
+  <!-- No4 -->
+  <div nz-col class="gutter-row" [nzSpan]="24">
+    <div class="inner-box">{{ country[4].name }}</div>
+    <div
+      class="inner-box"
+      [countUp]="country[4].score"
+      [options]="{ duration: score4 / 5 }"
+    >
+      0
+    </div>
+    <nz-progress
+      *ngIf="maxIndex == 4"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[4].percent"
+      [nzStrokeColor]="higherStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex != 4"
+      [nzShowInfo]="false"
+      nzStrokeWidth="12"
+      [nzPercent]="country[4].percent"
+      [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+  </div>
+</div>
+<nz-divider nzOrientation="left" nzText="Responsive"> </nz-divider>
+<nz-divider nzOrientation="left" nzText="Vertical"></nz-divider>

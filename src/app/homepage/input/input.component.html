@@ -1,0 +1,48 @@
+<div name="head">
+  <nz-divider nzOrientation="left" [nzText]="country[0].name"></nz-divider>
+  <div nz-row [nzGutter]="0">
+    <div nz-col class="gutter-row" [nzSpan]="10">
+      <div class="input-box">
+        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[0].score" />
+      </div>
+    </div>
+  </div>
+  <nz-divider nzOrientation="left" [nzText]="country[1].name"></nz-divider>
+  <div nz-row [nzGutter]="0">
+    <div nz-col class="gutter-row" [nzSpan]="10">
+      <div class="input-box">
+        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[1].score" />
+      </div>
+    </div>
+  </div>
+  <nz-divider nzOrientation="left" [nzText]="country[2].name"></nz-divider>
+  <div nz-row [nzGutter]="0">
+    <div nz-col class="gutter-row" [nzSpan]="10">
+      <div class="input-box">
+        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[2].score" />
+      </div>
+    </div>
+  </div>
+  <nz-divider nzOrientation="left" [nzText]="country[3].name"></nz-divider>
+  <div nz-row [nzGutter]="0">
+    <div nz-col class="gutter-row" [nzSpan]="10">
+      <div class="input-box">
+        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[3].score" />
+      </div>
+    </div>
+  </div>
+  <nz-divider nzOrientation="left" [nzText]="country[4].name"></nz-divider>
+  <div nz-row [nzGutter]="0">
+    <div nz-col class="gutter-row" [nzSpan]="10">
+      <div class="input-box">
+        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[4].score" />
+      </div>
+    </div>
+  </div>
+  <div class = "button">
+    <button nz-button nzType="primary" nzSize="large" nzShape="round" (click)="inputButton()">
+        <span nz-icon nzType="download"></span>
+        登記
+      </button>
+  </div>
+</div>
