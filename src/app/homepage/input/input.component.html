@@ -1,48 +1,879 @@
 <div name="head">
   <nz-divider nzOrientation="left" [nzText]="country[0].name"></nz-divider>
-  <div nz-row [nzGutter]="0">
-    <div nz-col class="gutter-row" [nzSpan]="10">
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
       <div class="input-box">
-        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[0].score" />
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 1 階段"
+            [(ngModel)]="country[0].score1"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 2 階段"
+            [(ngModel)]="country[0].score2"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 3 階段"
+            [(ngModel)]="country[0].score3"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 4 階段"
+            [(ngModel)]="country[0].score4"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 5 階段"
+            [(ngModel)]="country[0].score5"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 6 階段"
+            [(ngModel)]="country[0].score6"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 7 階段"
+            [(ngModel)]="country[0].score7"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+  </div>
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S1"
+            [(ngModel)]="country[0].sPoint1"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S2"
+            [(ngModel)]="country[0].sPoint2"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S3"
+            [(ngModel)]="country[0].sPoint3"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S4"
+            [(ngModel)]="country[0].sPoint4"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S5"
+            [(ngModel)]="country[0].sPoint5"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S6"
+            [(ngModel)]="country[0].sPoint6"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S7"
+            [(ngModel)]="country[0].sPoint7"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
       </div>
     </div>
   </div>
   <nz-divider nzOrientation="left" [nzText]="country[1].name"></nz-divider>
-  <div nz-row [nzGutter]="0">
-    <div nz-col class="gutter-row" [nzSpan]="10">
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
       <div class="input-box">
-        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[1].score" />
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 1 階段"
+            [(ngModel)]="country[1].score1"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 2 階段"
+            [(ngModel)]="country[1].score2"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 3 階段"
+            [(ngModel)]="country[1].score3"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 4 階段"
+            [(ngModel)]="country[1].score4"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 5 階段"
+            [(ngModel)]="country[1].score5"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 6 階段"
+            [(ngModel)]="country[1].score6"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 7 階段"
+            [(ngModel)]="country[1].score7"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+  </div>
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S1"
+            [(ngModel)]="country[1].sPoint1"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S2"
+            [(ngModel)]="country[1].sPoint2"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S3"
+            [(ngModel)]="country[1].sPoint3"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S4"
+            [(ngModel)]="country[1].sPoint4"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S5"
+            [(ngModel)]="country[1].sPoint5"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S6"
+            [(ngModel)]="country[1].sPoint6"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S7"
+            [(ngModel)]="country[1].sPoint7"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
       </div>
     </div>
   </div>
   <nz-divider nzOrientation="left" [nzText]="country[2].name"></nz-divider>
-  <div nz-row [nzGutter]="0">
-    <div nz-col class="gutter-row" [nzSpan]="10">
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
       <div class="input-box">
-        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[2].score" />
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 1 階段"
+            [(ngModel)]="country[2].score1"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 2 階段"
+            [(ngModel)]="country[2].score2"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 3 階段"
+            [(ngModel)]="country[2].score3"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 4 階段"
+            [(ngModel)]="country[2].score4"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 5 階段"
+            [(ngModel)]="country[2].score5"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 6 階段"
+            [(ngModel)]="country[2].score6"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 7 階段"
+            [(ngModel)]="country[2].score7"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+  </div>
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S1"
+            [(ngModel)]="country[2].sPoint1"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S2"
+            [(ngModel)]="country[2].sPoint2"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S3"
+            [(ngModel)]="country[2].sPoint3"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S4"
+            [(ngModel)]="country[2].sPoint4"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S5"
+            [(ngModel)]="country[2].sPoint5"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S6"
+            [(ngModel)]="country[2].sPoint6"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S7"
+            [(ngModel)]="country[2].sPoint7"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
       </div>
     </div>
   </div>
   <nz-divider nzOrientation="left" [nzText]="country[3].name"></nz-divider>
-  <div nz-row [nzGutter]="0">
-    <div nz-col class="gutter-row" [nzSpan]="10">
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
       <div class="input-box">
-        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[3].score" />
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 1 階段"
+            [(ngModel)]="country[3].score1"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 2 階段"
+            [(ngModel)]="country[3].score2"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 3 階段"
+            [(ngModel)]="country[3].score3"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 4 階段"
+            [(ngModel)]="country[3].score4"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 5 階段"
+            [(ngModel)]="country[3].score5"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 6 階段"
+            [(ngModel)]="country[3].score6"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 7 階段"
+            [(ngModel)]="country[3].score7"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+  </div>
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S1"
+            [(ngModel)]="country[3].sPoint1"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S2"
+            [(ngModel)]="country[3].sPoint2"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S3"
+            [(ngModel)]="country[3].sPoint3"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S4"
+            [(ngModel)]="country[3].sPoint4"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S5"
+            [(ngModel)]="country[3].sPoint5"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S6"
+            [(ngModel)]="country[3].sPoint6"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S7"
+            [(ngModel)]="country[3].sPoint7"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
       </div>
     </div>
   </div>
   <nz-divider nzOrientation="left" [nzText]="country[4].name"></nz-divider>
-  <div nz-row [nzGutter]="0">
-    <div nz-col class="gutter-row" [nzSpan]="10">
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
       <div class="input-box">
-        <input nz-input placeholder="請輸入分數" [(ngModel)]="country[4].score" />
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 1 階段"
+            [(ngModel)]="country[4].score1"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 2 階段"
+            [(ngModel)]="country[4].score2"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 3 階段"
+            [(ngModel)]="country[4].score3"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 4 階段"
+            [(ngModel)]="country[4].score4"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 5 階段"
+            [(ngModel)]="country[4].score5"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 6 階段"
+            [(ngModel)]="country[4].score6"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="第 7 階段"
+            [(ngModel)]="country[4].score7"
+          />
+        </nz-input-number-group>
       </div>
     </div>
   </div>
-  <div class = "button">
-    <button nz-button nzType="primary" nzSize="large" nzShape="round" (click)="inputButton()">
-        <span nz-icon nzType="download"></span>
-        登記
-      </button>
+  <div nz-row [nzGutter]="5">
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S1"
+            [(ngModel)]="country[4].sPoint1"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S2"
+            [(ngModel)]="country[4].sPoint2"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S3"
+            [(ngModel)]="country[4].sPoint3"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S4"
+            [(ngModel)]="country[4].sPoint4"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S5"
+            [(ngModel)]="country[4].sPoint5"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S6"
+            [(ngModel)]="country[4].sPoint6"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+    <div nz-col class="gutter-row" [nzSpan]="3">
+      <div class="input-box">
+        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
+          <nz-input-number
+            nz-input
+            nzPlaceHolder="S7"
+            [(ngModel)]="country[4].sPoint7"
+            nzSize="large"
+            [disabled]="true"
+          />
+        </nz-input-number-group>
+      </div>
+    </div>
+  </div>
+  <div class="button">
+    <button
+      nz-button
+      nzType="primary"
+      nzSize="large"
+      nzShape="round"
+      (click)="inputButton()"
+    >
+      <span nz-icon nzType="download"></span>
+      登記
+    </button>
   </div>
 </div>

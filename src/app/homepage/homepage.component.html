@@ -1,17 +1,22 @@
 <nz-layout>
   <nz-header>
+    <div class="logo">
+      <a [routerLink]="['/']">
+        <img src="../../assets/image/logo.png" width="30" height="30" />
+      </a>
+    </div>
     <ul nz-menu nzMode="horizontal">
       <li nz-menu-item nzMatchRouter>
-        <span nz-icon nzType="home" nzTheme="outline"></span>
-        <a [routerLink]="['/']"> 首頁</a>
-      </li>
-      <li nz-menu-item nzMatchRouter>
         <span nz-icon nzType="crown" nzTheme="outline"></span>
-        <a [routerLink]="['/', 'score']"> 分數</a>
+        <a [routerLink]="['/', 'score']"> 文明分數</a>
       </li>
       <li nz-menu-item nzMatchRouter>
         <span nz-icon nzType="code" nzTheme="outline"></span>
-        <a [routerLink]="['/', 'input']"> 輸入</a>
+        <a [routerLink]="['/', 'input']"> 資訊時代</a>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="compass" nzTheme="outline"></span>
+        <a [routerLink]="['/', 'historic']"> 歷史時代</a>
       </li>
     </ul>
   </nz-header>

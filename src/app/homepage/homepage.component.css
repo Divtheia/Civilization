@@ -12,6 +12,7 @@ nz-layout {
 
 nz-header {
     background: #fff;
+    padding: 0;
   }
 
 nz-content {
@@ -22,3 +23,11 @@ nz-footer {
   text-align: center;
 }
 
+.logo {
+  float: left;
+  width: 50px;
+}
+
+.logo img {
+  margin-left: 20px;
+}

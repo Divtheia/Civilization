@@ -1,0 +1,13 @@
+nz-select {
+    margin: 0 8px 10px 0;
+    width: 80%;
+  }
+
+  nz-switch {
+    padding: 0px 10px;
+    width: 120px;
+  }
+
+  .button {
+    padding-top:100px
+}

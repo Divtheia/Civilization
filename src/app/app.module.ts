@@ -83,11 +83,12 @@ import { NzWaterMarkModule } from 'ng-zorro-antd/water-mark';
 import { ScoreComponent } from './homepage/score/score.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { InputComponent } from './homepage/input/input.component';
+import { HistoricComponent } from './homepage/historic/historic.component';
 
 registerLocaleData(zh);
 
 @NgModule({
-  declarations: [AppComponent, ScoreComponent, HomepageComponent, InputComponent],
+  declarations: [AppComponent, ScoreComponent, HomepageComponent, InputComponent, HistoricComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

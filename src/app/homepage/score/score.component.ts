@@ -8,61 +8,94 @@ import { ServiceService } from '../../service.service';
   styleUrls: ['./score.component.css'],
 })
 export class ScoreComponent {
-  constructor(private service: ServiceService, private router: Router) {}
-
-  country: any = [
-    { name: '魔羯座', score: null, percent: null},
-    { name: '水瓶座', score: null, percent: null},
-    { name: '天蠍座', score: null, percent: null},
-    { name: '天秤座', score: null, percent: null},
-    { name: '巨蟹座', score: null, percent: null},
-  ];
+  country: any = [];
+  constructor(private service: ServiceService, private router: Router) {
+    this.country = this.service.country;
+    this.score0 = this.sumScore(this.country[0]);
+    this.score1 = this.sumScore(this.country[1]);
+    this.score2 = this.sumScore(this.country[2]);
+    this.score3 = this.sumScore(this.country[3]);
+    this.score4 = this.sumScore(this.country[4]);
+  }
 
   max = 0;
   maxTop = 0;
   maxIndex = -1;
-  progressStyle = { '0%': '#108ee9', '50%': '#2db7f5', '100%': '#87d068' }
-  higherStyle = { '0%': '#B54FFF', '50%': '#FF30FF', '100%': '#FF8C8C' }
+  progressStyle = { '0%': '#108ee9', '50%': '#2db7f5', '100%': '#87d068' };
+  higherStyle = { '0%': '#B54FFF', '50%': '#FF30FF', '100%': '#FF8C8C' };
 
+  // 計算總分
   score0 = 0;
   score1 = 0;
   score2 = 0;
   score3 = 0;
   score4 = 0;
 
-  scoreArray: any[] = [];
+  // 跑分百分比
+  percent0 = 0;
+  percent1 = 0;
+  percent2 = 0;
+  percent3 = 0;
+  percent4 = 0;
+
+  percentArray: any[] = [];
+
+  // 加總文明分數
+  sumScore(e: any) {
+    let sum;
+    sum =
+      this.isRNumber(e.score1) +
+      this.isRNumber(e.score2) +
+      this.isRNumber(e.score3) +
+      this.isRNumber(e.score4) +
+      this.isRNumber(e.score5) +
+      this.isRNumber(e.score6) +
+      this.isRNumber(e.score7);
+      return sum;
+  }
+
+  // 判斷分數：正數-文明分數，負數-S值(不必計算)
+  isRNumber(num: number | null) {
+    if (num != null && num >= 0) {
+      return num;
+    } else {
+      return 0;
+    }
+  }
 
   findMax() {
     // 找出最大數
     this.max = Math.max(
-      this.country[0].score,
-      this.country[1].score,
-      this.country[2].score,
-      this.country[3].score,
-      this.country[4].score
+      this.score0,
+      this.score1,
+      this.score2,
+      this.score3,
+      this.score4
     );
 
     this.maxTop = this.max * 1.1;
 
     // 數值百分比放入
-    this.score0 = (this.country[0].score / this.maxTop) * 100;
-    this.score1 = (this.country[1].score / this.maxTop) * 100;
-    this.score2 = (this.country[2].score / this.maxTop) * 100;
-    this.score3 = (this.country[3].score / this.maxTop) * 100;
-    this.score4 = (this.country[4].score / this.maxTop) * 100;
+    this.percent0 = (this.score0 / this.maxTop) * 100;
+    this.percent1 = (this.score1 / this.maxTop) * 100;
+    this.percent2 = (this.score2 / this.maxTop) * 100;
+    this.percent3 = (this.score3 / this.maxTop) * 100;
+    this.percent4 = (this.score4 / this.maxTop) * 100;
     this.inputNumber();
 
-    this.scoreArray[0] = this.country[0].score;
-    this.scoreArray[1] = this.country[1].score;
-    this.scoreArray[2] = this.country[2].score;
-    this.scoreArray[3] = this.country[3].score;
-    this.scoreArray[4] = this.country[4].score;
+    this.percentArray[0] = this.score0;
+    this.percentArray[1] = this.score1;
+    this.percentArray[2] = this.score2;
+    this.percentArray[3] = this.score3;
+    this.percentArray[4] = this.score4;
 
-    this.maxIndex = this.scoreArray.findIndex((element)=> element == this.max);
+    this.maxIndex = this.percentArray.findIndex(
+      (element) => element == this.max
+    );
 
-    console.log('我最大!!!')
-    console.log(this.scoreArray)
-    console.log(this.max)
+    console.log('我最大!!!');
+    console.log(this.percentArray);
+    console.log(this.max);
     // console.log(this.country[this.maxIndex].score)
   }
 
@@ -78,60 +111,55 @@ export class ScoreComponent {
   // 跑分：判斷百分比↓↓↓↓↓↓
   judge0() {
     setTimeout(() => {
-      if (this.country[0].percent < this.score0) {
+      if (this.country[0].percent < this.percent0) {
         this.country[0].percent += 1;
-        // console.log(this.country[0].percent);
         this.judge0();
       } else {
-        console.log('finish!');
+        console.log('finish0!');
       }
     }, 100);
   }
 
   judge1() {
     setTimeout(() => {
-      if (this.country[1].percent < this.score1) {
+      if (this.country[1].percent < this.percent1) {
         this.country[1].percent += 1;
-        // console.log(this.country[1].percent);
         this.judge1();
       } else {
-        console.log('finish!');
+        console.log('finish1!');
       }
     }, 100);
   }
 
   judge2() {
     setTimeout(() => {
-      if (this.country[2].percent < this.score2) {
+      if (this.country[2].percent < this.percent2) {
         this.country[2].percent += 1;
-        // console.log(this.country[2].percent);
         this.judge2();
       } else {
-        console.log('finish!');
+        console.log('finish2!');
       }
     }, 100);
   }
 
   judge3() {
     setTimeout(() => {
-      if (this.country[3].percent < this.score3) {
+      if (this.country[3].percent < this.percent3) {
         this.country[3].percent += 1;
-        // console.log(this.country[3].percent);
         this.judge3();
       } else {
-        console.log('finish!');
+        console.log('finish3!');
       }
     }, 100);
   }
 
   judge4() {
     setTimeout(() => {
-      if (this.country[4].percent < this.score4) {
+      if (this.country[4].percent < this.percent4) {
         this.country[4].percent += 1;
-        // console.log(this.country[4].percent);
         this.judge4();
       } else {
-        console.log('finish!');
+        console.log('finish4!');
       }
     }, 100);
   }
