@@ -68,34 +68,23 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="第 7 階段"
-            [(ngModel)]="country[0].score7"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
     <div nz-col class="gutter-row" [nzSpan]="3">
       <!-- 天災閃電 -->
       <div
         nz-col
-        class="gutter-row float"
-        *ngIf="country[0].scourgeNum > 0 && country[0].scourgeNum % 2 == 0 && country[0].s1bad != 0"
+        class="gutter-row float blink"
+        *ngIf="
+          country[0].scourgeNum > 0 &&
+          country[0].scourgeNum % 2 == 0 &&
+          country[0].s1bad != 0
+        "
         (click)="scourgeClick(country[0])"
       >
-        <span
-          nz-icon
-          nzType="thunderbolt"
-          nzTheme="twotone"
-          [nzTwotoneColor]="'#c4c41a'"
-          class="blink thunder"
-        ></span>
+        <img src="../../../assets/image/lightning2.png" class="lightning" />
+        <img src="../../../assets/image/lightning4.png" class="lightning" />
+        <img src="../../../assets/image/lightning6.png" class="lightning" />
         <!-- 天災分數 -->
-        <span class="point-box blink">-{{ country[0].s1bad }}</span>
+        <span class="point-box">-{{ country[0].s1bad }}</span>
       </div>
     </div>
   </div>
@@ -178,19 +167,6 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="S7"
-            [(ngModel)]="country[0].sPoint7"
-            nzSize="large"
-            [disabled]="true"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
   </div>
 
   <!-- [1] -->
@@ -262,34 +238,23 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="第 7 階段"
-            [(ngModel)]="country[1].score7"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
     <div nz-col class="gutter-row" [nzSpan]="3">
       <!-- 天災閃電 -->
       <div
         nz-col
-        class="gutter-row float"
-        *ngIf="country[1].scourgeNum > 0 && country[1].scourgeNum % 2 == 0 && country[1].s1bad != 0"
+        class="gutter-row float blink"
+        *ngIf="
+          country[1].scourgeNum > 0 &&
+          country[1].scourgeNum % 2 == 0 &&
+          country[1].s1bad != 0
+        "
         (click)="scourgeClick(country[1])"
       >
-        <span
-          nz-icon
-          nzType="thunderbolt"
-          nzTheme="twotone"
-          [nzTwotoneColor]="'#c4c41a'"
-          class="blink thunder"
-        ></span>
+        <img src="../../../assets/image/lightning2.png" class="lightning" />
+        <img src="../../../assets/image/lightning4.png" class="lightning" />
+        <img src="../../../assets/image/lightning6.png" class="lightning" />
         <!-- 天災分數 -->
-        <span class="point-box blink">-{{ country[1].s1bad }}</span>
+        <span class="point-box">-{{ country[1].s1bad }}</span>
       </div>
     </div>
   </div>
@@ -372,19 +337,6 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="S7"
-            [(ngModel)]="country[1].sPoint7"
-            nzSize="large"
-            [disabled]="true"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
   </div>
 
   <!-- [2] -->
@@ -456,34 +408,23 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="第 7 階段"
-            [(ngModel)]="country[2].score7"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
     <div nz-col class="gutter-row" [nzSpan]="3">
       <!-- 天災閃電 -->
       <div
         nz-col
-        class="gutter-row float"
-        *ngIf="country[2].scourgeNum > 0 && country[2].scourgeNum % 2 == 0 && country[2].s1bad != 0"
+        class="gutter-row float blink"
+        *ngIf="
+          country[2].scourgeNum > 0 &&
+          country[2].scourgeNum % 2 == 0 &&
+          country[2].s1bad != 0
+        "
         (click)="scourgeClick(country[2])"
       >
-        <span
-          nz-icon
-          nzType="thunderbolt"
-          nzTheme="twotone"
-          [nzTwotoneColor]="'#c4c41a'"
-          class="blink thunder"
-        ></span>
+        <img src="../../../assets/image/lightning2.png" class="lightning" />
+        <img src="../../../assets/image/lightning4.png" class="lightning" />
+        <img src="../../../assets/image/lightning6.png" class="lightning" />
         <!-- 天災分數 -->
-        <span class="point-box blink">-{{ country[2].s1bad }}</span>
+        <span class="point-box">-{{ country[2].s1bad }}</span>
       </div>
     </div>
   </div>
@@ -566,19 +507,6 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="S7"
-            [(ngModel)]="country[2].sPoint7"
-            nzSize="large"
-            [disabled]="true"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
   </div>
 
   <!-- [3] -->
@@ -650,34 +578,23 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="第 7 階段"
-            [(ngModel)]="country[3].score7"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
     <div nz-col class="gutter-row" [nzSpan]="3">
       <!-- 天災閃電 -->
       <div
         nz-col
-        class="gutter-row float"
-        *ngIf="country[3].scourgeNum > 0 && country[3].scourgeNum % 2 == 0 && country[3].s1bad != 0"
+        class="gutter-row float blink"
+        *ngIf="
+          country[3].scourgeNum > 0 &&
+          country[3].scourgeNum % 2 == 0 &&
+          country[3].s1bad != 0
+        "
         (click)="scourgeClick(country[3])"
       >
-        <span
-          nz-icon
-          nzType="thunderbolt"
-          nzTheme="twotone"
-          [nzTwotoneColor]="'#c4c41a'"
-          class="blink thunder"
-        ></span>
+        <img src="../../../assets/image/lightning2.png" class="lightning" />
+        <img src="../../../assets/image/lightning4.png" class="lightning" />
+        <img src="../../../assets/image/lightning6.png" class="lightning" />
         <!-- 天災分數 -->
-        <span class="point-box blink">-{{ country[3].s1bad }}</span>
+        <span class="point-box">-{{ country[3].s1bad }}</span>
       </div>
     </div>
   </div>
@@ -760,19 +677,6 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="S7"
-            [(ngModel)]="country[3].sPoint7"
-            nzSize="large"
-            [disabled]="true"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
   </div>
 
   <!-- [4] -->
@@ -844,34 +748,23 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="ant-design">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="第 7 階段"
-            [(ngModel)]="country[4].score7"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
     <div nz-col class="gutter-row" [nzSpan]="3">
       <!-- 天災閃電 -->
       <div
         nz-col
-        class="gutter-row float"
-        *ngIf="country[4].scourgeNum > 0 && country[4].scourgeNum % 2 == 0 && country[4].s1bad != 0"
+        class="gutter-row float blink"
+        *ngIf="
+          country[4].scourgeNum > 0 &&
+          country[4].scourgeNum % 2 == 0 &&
+          country[4].s1bad != 0
+        "
         (click)="scourgeClick(country[4])"
       >
-        <span
-          nz-icon
-          nzType="thunderbolt"
-          nzTheme="twotone"
-          [nzTwotoneColor]="'#c4c41a'"
-          class="blink thunder"
-        ></span>
+        <img src="../../../assets/image/lightning2.png" class="lightning" />
+        <img src="../../../assets/image/lightning4.png" class="lightning" />
+        <img src="../../../assets/image/lightning6.png" class="lightning" />
         <!-- 天災分數 -->
-        <span class="point-box blink">-{{ country[4].s1bad }}</span>
+        <span class="point-box">-{{ country[4].s1bad }}</span>
       </div>
     </div>
   </div>
@@ -954,19 +847,6 @@
         </nz-input-number-group>
       </div>
     </div>
-    <!-- <div nz-col class="gutter-row" [nzSpan]="3">
-      <div class="input-box">
-        <nz-input-number-group nzAddOnBeforeIcon="thunderbolt">
-          <nz-input-number
-            nz-input
-            nzPlaceHolder="S7"
-            [(ngModel)]="country[4].sPoint7"
-            nzSize="large"
-            [disabled]="true"
-          />
-        </nz-input-number-group>
-      </div>
-    </div> -->
   </div>
   <div class="button">
     <button

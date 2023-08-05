@@ -20,7 +20,7 @@
   font-family: 華康蚪風體W4;
   font-weight: bold;
 
-  background: linear-gradient(to top, #40217a, #d36c76, #ec9f6b);
+  background: linear-gradient(to top, #3b1f6e, #96474f, #ca875a);
   background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
   background-clip: text;
   -webkit-background-clip: text;
@@ -36,6 +36,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
+  border-top-color: #ff4d4f;
 }
 
 .thunder {
@@ -48,7 +50,7 @@
 }
 
 .blink {
-  animation-duration: 0.5s;
+  animation-duration: 0.7s;
   animation-name: blink;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -59,6 +61,12 @@
     opacity: 1;
   }
   to {
-    opacity: 0.2;
+    opacity: 0.3;
   }
+}
+
+.lightning {
+  width: 25px;
+  margin: 0px 5px;
+  padding: 0;
 }

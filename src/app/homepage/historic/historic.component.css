@@ -18,6 +18,8 @@ nz-switch {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+
+  border-top-color: #ff4d4f;
 }
 
 .ant-switch-inner {
