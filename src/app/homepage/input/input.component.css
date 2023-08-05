@@ -1,3 +1,64 @@
 .button {
-    padding-top:100px
+  padding-top: 70px;
+}
+
+.name-box {
+  font-size: 36px;
+  float: left;
+  font-family: 華康硬黑體W7;
+
+  background: linear-gradient(to top, #000000, #413c3d, #858281);
+  background: -webkit-linear-gradient(to top, #000000, #413c3d, #858281);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.point-box {
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: 華康蚪風體W4;
+  font-weight: bold;
+
+  background: linear-gradient(to top, #40217a, #d36c76, #ec9f6b);
+  background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.ant-divider-with-text {
+  font-size: 32px;
+  font-family: 華康硬黑體W7;
+
+  background: linear-gradient(to top, #c057b2, #7e3d3b, #4e321b);
+  background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.thunder {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.float {
+  float: left;
+}
+
+.blink {
+  animation-duration: 0.5s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
 }

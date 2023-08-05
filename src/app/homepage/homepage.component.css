@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -8,6 +8,7 @@ body {
 nz-layout {
   min-height: 100vh;
   background: pink;
+  overflow: hidden;
 }
 
 nz-header {

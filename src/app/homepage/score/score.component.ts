@@ -11,11 +11,12 @@ export class ScoreComponent {
   country: any = [];
   constructor(private service: ServiceService, private router: Router) {
     this.country = this.service.country;
-    this.score0 = this.sumScore(this.country[0]);
-    this.score1 = this.sumScore(this.country[1]);
-    this.score2 = this.sumScore(this.country[2]);
-    this.score3 = this.sumScore(this.country[3]);
-    this.score4 = this.sumScore(this.country[4]);
+    this.score0 = this.country[0].totalScore;
+    this.score1 = this.country[1].totalScore;
+    this.score2 = this.country[2].totalScore;
+    this.score3 = this.country[3].totalScore;
+    this.score4 = this.country[4].totalScore;
+    console.log(this.country);
   }
 
   max = 0;
@@ -40,28 +41,6 @@ export class ScoreComponent {
 
   percentArray: any[] = [];
 
-  // 加總文明分數
-  sumScore(e: any) {
-    let sum;
-    sum =
-      this.isRNumber(e.score1) +
-      this.isRNumber(e.score2) +
-      this.isRNumber(e.score3) +
-      this.isRNumber(e.score4) +
-      this.isRNumber(e.score5) +
-      this.isRNumber(e.score6) +
-      this.isRNumber(e.score7);
-      return sum;
-  }
-
-  // 判斷分數：正數-文明分數，負數-S值(不必計算)
-  isRNumber(num: number | null) {
-    if (num != null && num >= 0) {
-      return num;
-    } else {
-      return 0;
-    }
-  }
 
   findMax() {
     // 找出最大數
@@ -115,7 +94,7 @@ export class ScoreComponent {
         this.country[0].percent += 1;
         this.judge0();
       } else {
-        console.log('finish0!');
+        // console.log('finish0!');
       }
     }, 100);
   }
@@ -126,7 +105,7 @@ export class ScoreComponent {
         this.country[1].percent += 1;
         this.judge1();
       } else {
-        console.log('finish1!');
+        // console.log('finish1!');
       }
     }, 100);
   }
@@ -137,7 +116,7 @@ export class ScoreComponent {
         this.country[2].percent += 1;
         this.judge2();
       } else {
-        console.log('finish2!');
+        // console.log('finish2!');
       }
     }, 100);
   }
@@ -148,7 +127,7 @@ export class ScoreComponent {
         this.country[3].percent += 1;
         this.judge3();
       } else {
-        console.log('finish3!');
+        // console.log('finish3!');
       }
     }, 100);
   }
@@ -159,7 +138,7 @@ export class ScoreComponent {
         this.country[4].percent += 1;
         this.judge4();
       } else {
-        console.log('finish4!');
+        // console.log('finish4!');
       }
     }, 100);
   }
@@ -175,7 +154,6 @@ export class ScoreComponent {
   // 跑分：判斷百分比↑↑↑↑↑↑↑
 
   ngOnInit(): void {
-    this.country = this.service.country;
     this.findMax();
   }
 }

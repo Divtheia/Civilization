@@ -1,134 +1,273 @@
-<nz-divider nzOrientation="left" nzText="文明之城"></nz-divider>
+<div style="height: 20px;"></div>
 <div nz-row [nzGutter]="0">
   <!-- No0 -->
-  <div nz-col class="gutter-row" [nzSpan]="24">
-    <div class="inner-box">{{ country[0].name }}</div>
+  <div nz-col class="gutter-row" [nzSpan]="2">
+    <img
+      src="../../../assets/image/smile1.png"
+      class="emoji"
+      *ngIf="country[0].totalSPoint < 50 || country[0].sPoint2 == null"
+    />
+    <img
+      src="../../../assets/image/soso1.png"
+      class="emoji"
+      *ngIf="country[0].totalSPoint >= 50 && country[0].totalSPoint < 100 &&country[0].sPoint2 != null"
+    />
+    <img
+      src="../../../assets/image/sad1.png"
+      class="emoji"
+      *ngIf="country[0].totalSPoint > 100 &&country[0].sPoint2 != null"
+    />
+  </div>
+  <div nz-col class="gutter-row" [nzSpan]="7">
+    <div class="name-box">{{ country[0].name }}</div>
     <div
-      class="inner-box"
+      class="point-box"
       [countUp]="score0"
       [options]="{ duration: percent0 / 5 }"
     >
-      0
     </div>
+  </div>
+  <div
+    nz-col
+    class="gutter-row"
+    [nzSpan]="6"
+    *ngIf="country[0].scourgeNum > 0 && country[0].scourgeNum % 2 == 0 && country[0].s1bad != 0"
+  >
+    <img src="../../../assets/image/lightning1.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning5.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning3.png" class="blink lightning" />
+  </div>
+
+  <div nz-col [nzSpan]="24" class="progress">
     <nz-progress
       *ngIf="maxIndex != 0"
       [nzShowInfo]="false"
-      nzStrokeWidth="12"
+      nzStrokeWidth="22"
       [nzPercent]="country[0].percent"
       [nzStrokeColor]="progressStyle"
     ></nz-progress>
     <nz-progress
       *ngIf="maxIndex == 0"
       [nzShowInfo]="false"
-      nzStrokeWidth="12"
+      nzStrokeWidth="22"
       [nzPercent]="country[0].percent"
       [nzStrokeColor]="higherStyle"
     ></nz-progress>
   </div>
 
   <!-- No1 -->
-  <div nz-col class="gutter-row" [nzSpan]="24">
-    <div class="inner-box">{{ country[1].name }}</div>
+  <div nz-col class="gutter-row" [nzSpan]="2">
+    <img
+      src="../../../assets/image/smile1.png"
+      class="emoji"
+      *ngIf="country[1].totalSPoint < 50 || country[1].sPoint2 == null"
+    />
+    <img
+      src="../../../assets/image/soso1.png"
+      class="emoji"
+      *ngIf="country[1].totalSPoint >= 50 && country[1].totalSPoint < 100 &&country[1].sPoint2 != null"
+    />
+    <img
+      src="../../../assets/image/sad1.png"
+      class="emoji"
+      *ngIf="country[1].totalSPoint > 100 &&country[1].sPoint2 != null"
+    />
+  </div>
+  <div nz-col class="gutter-row" [nzSpan]="7">
+    <div class="name-box">{{ country[1].name }}</div>
     <div
-      class="inner-box"
+      class="point-box"
       [countUp]="score1"
       [options]="{ duration: percent1 / 5 }"
     >
-      0
     </div>
-    <nz-progress
-      *ngIf="maxIndex == 1"
-      [nzShowInfo]="false"
-      nzStrokeWidth="12"
-      [nzPercent]="country[1].percent"
-      [nzStrokeColor]="higherStyle"
-    ></nz-progress>
+  </div>
+  <div
+    nz-col
+    class="gutter-row"
+    [nzSpan]="6"
+    *ngIf="country[1].scourgeNum > 0 && country[1].scourgeNum % 2 == 0 && country[1].s1bad != 0"
+  >
+    <img src="../../../assets/image/lightning1.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning5.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning3.png" class="blink lightning" />
+  </div>
+  <div nz-col [nzSpan]="24" class="progress">
     <nz-progress
       *ngIf="maxIndex != 1"
       [nzShowInfo]="false"
-      nzStrokeWidth="12"
+      nzStrokeWidth="22"
       [nzPercent]="country[1].percent"
       [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex == 1"
+      [nzShowInfo]="false"
+      nzStrokeWidth="22"
+      [nzPercent]="country[1].percent"
+      [nzStrokeColor]="higherStyle"
     ></nz-progress>
   </div>
 
   <!-- No2 -->
-  <div nz-col class="gutter-row" [nzSpan]="24">
-    <div class="inner-box">{{ country[2].name }}</div>
+  <div nz-col class="gutter-row" [nzSpan]="2">
+    <img
+      src="../../../assets/image/smile1.png"
+      class="emoji"
+      *ngIf="country[2].totalSPoint < 50 || country[2].sPoint2 == null"
+    />
+    <img
+      src="../../../assets/image/soso1.png"
+      class="emoji"
+      *ngIf="country[2].totalSPoint >= 50 && country[2].totalSPoint < 100 &&country[2].sPoint2 != null"
+    />
+    <img
+      src="../../../assets/image/sad1.png"
+      class="emoji"
+      *ngIf="country[2].totalSPoint > 100 &&country[2].sPoint2 != null"
+    />
+  </div>
+  <div nz-col class="gutter-row" [nzSpan]="7">
+    <div class="name-box">{{ country[2].name }}</div>
     <div
-      class="inner-box"
+      class="point-box"
       [countUp]="score2"
       [options]="{ duration: percent2 / 5 }"
     >
-      0
     </div>
-    <nz-progress
-      *ngIf="maxIndex == 2"
-      [nzShowInfo]="false"
-      nzStrokeWidth="12"
-      [nzPercent]="country[2].percent"
-      [nzStrokeColor]="higherStyle"
-    ></nz-progress>
+  </div>
+  <div
+    nz-col
+    class="gutter-row"
+    [nzSpan]="6"
+    *ngIf="country[2].scourgeNum > 0 && country[2].scourgeNum % 2 == 0 && country[2].s1bad != 0"
+  >
+    <img src="../../../assets/image/lightning1.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning5.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning3.png" class="blink lightning" />
+  </div>
+  <div nz-col [nzSpan]="24" class="progress">
     <nz-progress
       *ngIf="maxIndex != 2"
       [nzShowInfo]="false"
-      nzStrokeWidth="12"
+      nzStrokeWidth="22"
       [nzPercent]="country[2].percent"
       [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex == 2"
+      [nzShowInfo]="false"
+      nzStrokeWidth="22"
+      [nzPercent]="country[2].percent"
+      [nzStrokeColor]="higherStyle"
     ></nz-progress>
   </div>
 
   <!-- No3 -->
-  <div nz-col class="gutter-row" [nzSpan]="24">
-    <div class="inner-box">{{ country[3].name }}</div>
+  <div nz-col class="gutter-row" [nzSpan]="2">
+    <img
+      src="../../../assets/image/smile1.png"
+      class="emoji"
+      *ngIf="country[3].totalSPoint < 50 || country[3].sPoint2 == null"
+    />
+    <img
+      src="../../../assets/image/soso1.png"
+      class="emoji"
+      *ngIf="country[3].totalSPoint >= 50 && country[3].totalSPoint < 100 &&country[3].sPoint2 != null"
+    />
+    <img
+      src="../../../assets/image/sad1.png"
+      class="emoji"
+      *ngIf="country[3].totalSPoint > 100 &&country[3].sPoint2 != null"
+    />
+  </div>
+  <div nz-col class="gutter-row" [nzSpan]="7">
+    <div class="name-box">{{ country[3].name }}</div>
     <div
-      class="inner-box"
+      class="point-box"
       [countUp]="score3"
       [options]="{ duration: percent3 / 5 }"
     >
-      0
     </div>
-    <nz-progress
-      *ngIf="maxIndex == 3"
-      [nzShowInfo]="false"
-      nzStrokeWidth="12"
-      [nzPercent]="country[3].percent"
-      [nzStrokeColor]="higherStyle"
-    ></nz-progress>
+  </div>
+  <div
+    nz-col
+    class="gutter-row"
+    [nzSpan]="6"
+    *ngIf="country[3].scourgeNum > 0 && country[3].scourgeNum % 2 == 0 && country[3].s1bad != 0"
+  >
+    <img src="../../../assets/image/lightning1.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning5.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning3.png" class="blink lightning" />
+  </div>
+  <div nz-col [nzSpan]="24" class="progress">
     <nz-progress
       *ngIf="maxIndex != 3"
       [nzShowInfo]="false"
-      nzStrokeWidth="12"
+      nzStrokeWidth="22"
       [nzPercent]="country[3].percent"
       [nzStrokeColor]="progressStyle"
+    ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex == 3"
+      [nzShowInfo]="false"
+      nzStrokeWidth="22"
+      [nzPercent]="country[3].percent"
+      [nzStrokeColor]="higherStyle"
     ></nz-progress>
   </div>
 
   <!-- No4 -->
-  <div nz-col class="gutter-row" [nzSpan]="24">
-    <div class="inner-box">{{ country[4].name }}</div>
+  <div nz-col class="gutter-row" [nzSpan]="2">
+    <img
+      src="../../../assets/image/smile1.png"
+      class="emoji"
+      *ngIf="country[4].totalSPoint < 50 || country[4].sPoint2 == null"
+    />
+    <img
+      src="../../../assets/image/soso1.png"
+      class="emoji"
+      *ngIf="country[4].totalSPoint >= 50 && country[4].totalSPoint < 100 &&country[4].sPoint2 != null"
+    />
+    <img
+      src="../../../assets/image/sad1.png"
+      class="emoji"
+      *ngIf="country[4].totalSPoint > 100 &&country[4].sPoint2 != null"
+    />
+  </div>
+  <div nz-col class="gutter-row" [nzSpan]="7">
+    <div class="name-box">{{ country[4].name }}</div>
     <div
-      class="inner-box"
+      class="point-box"
       [countUp]="score4"
       [options]="{ duration: percent4 / 5 }"
     >
-      0
     </div>
-    <nz-progress
-      *ngIf="maxIndex == 4"
-      [nzShowInfo]="false"
-      nzStrokeWidth="12"
-      [nzPercent]="country[4].percent"
-      [nzStrokeColor]="higherStyle"
-    ></nz-progress>
+  </div>
+  <div
+    nz-col
+    class="gutter-row"
+    [nzSpan]="6"
+    *ngIf="country[4].scourgeNum > 0 && country[4].scourgeNum % 2 == 0 && country[4].s1bad != 0"
+  >
+    <img src="../../../assets/image/lightning1.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning5.png" class="blink lightning" />
+    <img src="../../../assets/image/lightning3.png" class="blink lightning" />
+  </div>
+  <div nz-col [nzSpan]="24" class="progress">
     <nz-progress
       *ngIf="maxIndex != 4"
       [nzShowInfo]="false"
-      nzStrokeWidth="12"
+      nzStrokeWidth="22"
       [nzPercent]="country[4].percent"
       [nzStrokeColor]="progressStyle"
     ></nz-progress>
+    <nz-progress
+      *ngIf="maxIndex == 4"
+      [nzShowInfo]="false"
+      nzStrokeWidth="22"
+      [nzPercent]="country[4].percent"
+      [nzStrokeColor]="higherStyle"
+    ></nz-progress>
   </div>
 </div>
-<nz-divider nzOrientation="left" nzText="Responsive"> </nz-divider>
-<nz-divider nzOrientation="left" nzText="Vertical"></nz-divider>

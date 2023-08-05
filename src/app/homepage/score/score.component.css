@@ -1,13 +1,77 @@
-
 .inner-content {
-    background: #fff;
+  background: #fff;
+}
+
+nz-divider {
+  color: #333;
+}
+
+.inner-box {
+  background: #0092ff;
+  padding: 8px 0;
+}
+
+.name-box {
+  padding: 8px 20px;
+  font-size: 60px;
+  float: left;
+  font-family: 華康娃娃體W7;
+
+  background: linear-gradient(to top, #771069, #2a7d92, #3d30f8);
+  background: -webkit-linear-gradient(to top, #000000, #613c3d, #858281);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.point-box {
+  padding: 15px;
+  font-size: 50px;
+  font-family: 華康娃娃體W7;
+  font-weight: bold;
+  margin-left: 20px;
+
+  background: linear-gradient(to top, #2a164e, #9c2f3b, #deeec5);
+  background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.blink {
+  animation-duration: 0.8s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+
+  font-size: 36px;
+  padding: 18px 0;
+}
+@keyframes blink {
+  from {
+    opacity: 1;
   }
-  
-  nz-divider {
-    color: #333;
-    font-weight: normal;
+  to {
+    opacity: 0.2;
   }
-  .inner-box {
-    background: #0092ff;
-    padding: 8px 0;
-  }
+}
+
+.progress {
+  margin-bottom: 2%;
+}
+
+.lightning {
+  width: 60px;
+  margin: 20px;
+  padding: 0;
+}
+
+.emoji {
+  width: 50px;
+  margin: 18%;
+}
+
+.ant-progress-bg {
+  height: 30px;
+}

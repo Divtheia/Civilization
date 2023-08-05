@@ -1,13 +1,43 @@
 nz-select {
-    margin: 0 8px 10px 0;
-    width: 80%;
-  }
+  margin: 0 8px 10px 0;
+  width: 80%;
+}
 
-  nz-switch {
-    padding: 0px 10px;
-    width: 120px;
-  }
+nz-switch {
+  padding: 0px 10px;
+  width: 120px;
+}
 
-  .button {
-    padding-top:100px
+.ant-divider-horizontal {
+  font-size: 40px;
+  font-family:華康硬黑體W7;
+  margin-top: 30px;
+
+  background: linear-gradient(to top, #c057b2, #7e3d3b, #4e321b);
+  background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.ant-switch-inner {
+  font-size: 15px;
+}
+
+.button {
+  padding-top: 50px;
+}
+
+span {
+  font-family: 華康采風體W3;
+  font-weight: bold;
+}
+
+.text {
+  font-size: 22px;
+  background: linear-gradient(to top, #24424b, #302d5a, #1b204e);
+  background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
