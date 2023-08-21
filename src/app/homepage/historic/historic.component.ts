@@ -68,19 +68,19 @@ export class HistoricComponent {
       obj.s1score = 500;
       obj.s1sPoint = 9;
     } else if (obj.select1 == '2-1') {
-      obj.s1score = 200;
+      obj.s1score = 250;
       obj.s1sPoint = 0;
     } else if (obj.select1 == '2-2') {
-      obj.s1score = 200;
+      obj.s1score = 250;
       obj.s1sPoint = -1;
     } else if (obj.select1 == '2-3') {
-      obj.s1score = 350;
+      obj.s1score = 250;
       obj.s1sPoint = 0;
     } else if (obj.select1 == '3-1') {
-      obj.s1score = 350;
+      obj.s1score = 600;
       obj.s1sPoint = 0;
     } else if (obj.select1 == '3-2') {
-      obj.s1score = 150;
+      obj.s1score = 100;
       obj.s1sPoint = 0;
     } else if (obj.select1 == '3-3') {
       obj.s1score = -50;
@@ -112,7 +112,7 @@ export class HistoricComponent {
       obj.s2sPoint = 5;
       obj.s2bad = 500;
     } else if (obj.select2 == '6-1') {
-      obj.s2score = 300;
+      obj.s2score = 200;
       obj.s2sPoint = 0;
     } else {
       // 預防bug

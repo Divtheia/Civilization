@@ -14,8 +14,8 @@ export class ScoreComponent {
     this.score0 = this.country[0].totalScore;
     this.score1 = this.country[1].totalScore;
     this.score2 = this.country[2].totalScore;
-    this.score3 = this.country[3].totalScore;
-    this.score4 = this.country[4].totalScore;
+    // this.score3 = this.country[3].totalScore;
+    // this.score4 = this.country[4].totalScore;
     console.log(this.country);
   }
 
@@ -41,6 +41,11 @@ export class ScoreComponent {
 
   percentArray: any[] = [];
 
+  isShowCard = false;
+
+  showCard() {
+    this.isShowCard = !this.isShowCard;
+  }
 
   findMax() {
     // 找出最大數
@@ -48,8 +53,8 @@ export class ScoreComponent {
       this.score0,
       this.score1,
       this.score2,
-      this.score3,
-      this.score4
+      // this.score3,
+      // this.score4
     );
 
     this.maxTop = this.max * 1.1;
@@ -58,15 +63,15 @@ export class ScoreComponent {
     this.percent0 = (this.score0 / this.maxTop) * 100;
     this.percent1 = (this.score1 / this.maxTop) * 100;
     this.percent2 = (this.score2 / this.maxTop) * 100;
-    this.percent3 = (this.score3 / this.maxTop) * 100;
-    this.percent4 = (this.score4 / this.maxTop) * 100;
+    // this.percent3 = (this.score3 / this.maxTop) * 100;
+    // this.percent4 = (this.score4 / this.maxTop) * 100;
     this.inputNumber();
 
     this.percentArray[0] = this.score0;
     this.percentArray[1] = this.score1;
     this.percentArray[2] = this.score2;
-    this.percentArray[3] = this.score3;
-    this.percentArray[4] = this.score4;
+    // this.percentArray[3] = this.score3;
+    // this.percentArray[4] = this.score4;
 
     this.maxIndex = this.percentArray.findIndex(
       (element) => element == this.max
@@ -83,8 +88,8 @@ export class ScoreComponent {
     this.country[0].percent = 0;
     this.country[1].percent = 0;
     this.country[2].percent = 0;
-    this.country[3].percent = 0;
-    this.country[4].percent = 0;
+    // this.country[3].percent = 0;
+    // this.country[4].percent = 0;
   }
 
   // 跑分：判斷百分比↓↓↓↓↓↓
@@ -93,8 +98,6 @@ export class ScoreComponent {
       if (this.country[0].percent < this.percent0) {
         this.country[0].percent += 1;
         this.judge0();
-      } else {
-        // console.log('finish0!');
       }
     }, 100);
   }
@@ -104,8 +107,6 @@ export class ScoreComponent {
       if (this.country[1].percent < this.percent1) {
         this.country[1].percent += 1;
         this.judge1();
-      } else {
-        // console.log('finish1!');
       }
     }, 100);
   }
@@ -115,31 +116,25 @@ export class ScoreComponent {
       if (this.country[2].percent < this.percent2) {
         this.country[2].percent += 1;
         this.judge2();
-      } else {
-        // console.log('finish2!');
       }
     }, 100);
   }
 
   judge3() {
     setTimeout(() => {
-      if (this.country[3].percent < this.percent3) {
-        this.country[3].percent += 1;
-        this.judge3();
-      } else {
-        // console.log('finish3!');
-      }
+      // if (this.country[3].percent < this.percent3) {
+      //   this.country[3].percent += 1;
+      //   this.judge3();
+      // }
     }, 100);
   }
 
   judge4() {
     setTimeout(() => {
-      if (this.country[4].percent < this.percent4) {
-        this.country[4].percent += 1;
-        this.judge4();
-      } else {
-        // console.log('finish4!');
-      }
+      // if (this.country[4].percent < this.percent4) {
+      //   this.country[4].percent += 1;
+      //   this.judge4();
+      // }
     }, 100);
   }
 
@@ -147,8 +142,8 @@ export class ScoreComponent {
     this.judge0();
     this.judge1();
     this.judge2();
-    this.judge3();
-    this.judge4();
+    // this.judge3();
+    // this.judge4();
   });
 
   // 跑分：判斷百分比↑↑↑↑↑↑↑

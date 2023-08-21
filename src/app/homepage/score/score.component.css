@@ -32,6 +32,20 @@ nz-divider {
   margin-left: 20px;
 
   background: linear-gradient(to top, #2a164e, #9c2f3b, #deeec5);
+  background: -webkit-linear-gradient(to top, #2a164e, #9c2f3b, #deeec5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sPoint-box {
+  padding: 15px;
+  font-size: 50px;
+  font-family: 華康娃娃體W7;
+  font-weight: bold;
+  margin-left: 20px;
+
+  background: linear-gradient(to top, #270a3f, #c95937, #c75854);
   background: -webkit-linear-gradient(to top, #30175e, #bd626b, #db9261);
   background-clip: text;
   -webkit-background-clip: text;
@@ -74,4 +88,15 @@ nz-divider {
 
 .ant-progress-bg {
   height: 30px;
+}
+
+.box_fixed {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+
+.ant-ribbon-text {
+  font-size: 24px !important;
+  color: #0092ff;
 }

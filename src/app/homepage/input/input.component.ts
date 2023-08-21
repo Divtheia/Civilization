@@ -31,7 +31,7 @@ export class InputComponent implements OnInit {
     if (point) {
       // 判斷文明值是否為S值，負數代表減少S值
       if (point > 0) {
-        return Math.ceil(point / 100);
+        return Math.ceil(point / 150);
       } else {
         return point;
       }
@@ -225,6 +225,8 @@ export class InputComponent implements OnInit {
         obj.scourgeArray[i] = 0;
       }
     }
+
+    obj.scourgeNum = 1; // 扣完分閃電不顯示
 
     // 分數更新
     this.showText();
